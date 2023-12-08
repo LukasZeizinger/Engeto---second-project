@@ -71,22 +71,20 @@ while True:
             input_num[k] = list_input_num[k]
 
             if str(input_num[k]) == str(sep_num[k]):
-                input_num[k] = True
-                sep_num_edit[k] = False
+                sep_num_edit[k] = True
 
                 bull +=1
             
 # Check for cow   / nefunguje zatím         
             elif str(input_num[k]) in sep_num_edit.values():
-#                c = str(input_num[k])
-#                co = list(sep_num_edit.keys())[int(c)]
-                cow_key = sep_num_edit.get(c)
-                sep_num_edit[cow_key] = False
+                c = str(input_num[k])
+                co = list(sep_num_edit.values()).index(c)
+                sep_num_edit[co] = False
                 cow +=1
             else:
                     pass
 # Check if is comleted
-        if input_num == {0: True, 1: True, 2: True, 3: True}:
+        if sep_num_edit == {0: True, 1: True, 2: True, 3: True}:
             break
 
         else:
