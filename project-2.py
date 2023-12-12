@@ -23,10 +23,9 @@ sep_num_edit = {}
 keys = range(4)
 
 # Create a random number btw 1000 to 9999
-ran_num = str(7349)
-#(random.randrange(1000,9999))
+ran_num = str(random.randrange(1000,9999))
 # Show the random number
-print(ran_num)
+# print(ran_num)
 
 # Fill sep_num by random number  
 
@@ -75,11 +74,10 @@ while True:
 
                 bull +=1
             
-# Check for cow   / nefunguje zatím         
+# Check for cow        
             elif str(input_num[k]) in sep_num_edit.values():
                 c = str(input_num[k])
-                co = list(sep_num_edit.values()).index(c)
-                sep_num_edit[co] = False
+                sep_num_edit[list(sep_num_edit.values()).index(c)] = False
                 cow +=1
             else:
                     pass
