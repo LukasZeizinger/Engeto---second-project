@@ -138,8 +138,8 @@ print(f"I've generated a random 4 digit number for you.\n","Let's play a bulls a
 
 # Create a random number btw 1000 to 9999
 ran_num = generate_secret_number()
-# Show the random number
-print(ran_num)
+# Show the random number - for inspection
+#print(ran_num)
 
 # Fill sep_num by random number  
 separator_number(ran_num)
