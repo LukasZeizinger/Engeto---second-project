@@ -6,6 +6,9 @@ discord: Lukáš Zeizinger _nantuko
 """
 
 
+"""For inspection is line 144 and 145"""
+
+
 
 import random  
 import time
@@ -138,7 +141,7 @@ print(f"I've generated a random 4 digit number for you.\n","Let's play a bulls a
 
 # Create a random number btw 1000 to 9999
 ran_num = generate_secret_number()
-# Show the random number - for inspection
+# Show the random number
 #print(ran_num)
 
 # Fill sep_num by random number  
